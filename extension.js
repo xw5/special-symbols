@@ -11,7 +11,7 @@ function activate(context) {
     context.subscriptions.push(disposable);
 	
 	let symbolsAbout = hx.commands.registerCommand('symbols.about', () => {
-	    hx.env.openExternal('https://ext.dcloud.net.cn/plugin?name=hbxw-special-symbols');
+	    hx.env.openExternal('https://ext.dcloud.net.cn/plugin?id=17859');
 	});
 	context.subscriptions.push(symbolsAbout);
 };
