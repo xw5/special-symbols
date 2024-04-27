@@ -1,0 +1,65 @@
+{
+    "id": "hbxw-special-symbols",
+    "name": "special-symbols",
+    "description": "一个用于输入特殊符号的插件",
+    "displayName": "特殊符号",
+    "version": "0.0.1",
+    "publisher": "xiewu",
+    "engines": {
+        "HBuilderX": "^2.7.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./extension",
+    "activationEvents": [
+        "onCommand:symbols.symbols"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "symbols.symbols",
+                "title": "特殊符号"
+            },{
+                "command": "symbols.about",
+                "title": "关于/评价"
+            }
+        ],
+		"keybindings": [
+		  {
+		    "key": "ctrl+shift+alt+h",
+			"macosx": "command+shift+alt+h",
+		    "command": "symbols.symbols",
+		    "when": "editorTextFocus"
+		  }
+		],
+        "menus": {
+        	"editor/context": [
+        	  {
+        	    "command": "symbols.symbols",
+        		"title": "特殊符号",
+        	    "group": "z_commands",
+        	    "when": "editorTextFocus"
+        	  }
+        	],
+        	"menubar/tool": [{
+        	    "title": "特殊符号",
+        	    "group": "ext_settings",
+        	    "id": "symbols"
+        	}, {
+        	    "command": "symbols.symbols",
+        	    "title": "输入特殊符号",
+        	    "group": "symbols@1"
+        	}, {
+        	    "group": "symbols@2"
+        	}, {
+        	    "command": "symbols.about",
+        	    "title": "关于/评价",
+        	    "group": "symbols@3"
+        	}]
+        }
+    },
+    "extensionDependencies": [
+        "plugin-manager"
+    ]
+}
