@@ -1,8 +1,8 @@
 {
     "id": "hbxw-special-symbols",
     "name": "special-symbols",
-    "description": "一个用于输入特殊符号的插件",
-    "displayName": "特殊符号",
+    "description": "一个用于快速输入特殊符号的插件",
+    "displayName": "特殊符号助手",
     "version": "0.0.1",
     "publisher": "xiewu",
     "engines": {
@@ -37,7 +37,7 @@
         	"editor/context": [
         	  {
         	    "command": "symbols.symbols",
-        		"title": "特殊符号",
+        		"title": "输入特殊符号",
         	    "group": "z_commands",
         	    "when": "editorTextFocus"
         	  }
@@ -59,6 +59,13 @@
         	}]
         }
     },
+	"keywords": [
+	    "符号",
+	    "特殊符号",
+	    "symbols",
+	    "special-symbols"
+	],
+	"repository": "https://gitee.com/github-9819409/special-symbols",
     "extensionDependencies": [
         "plugin-manager"
     ]

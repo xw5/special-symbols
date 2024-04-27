@@ -1,19 +1,29 @@
-# WebviewDialog示例
+# 特殊符号助手插件
 
-用于演示插件API webviewDialog的使用。
+一个用于快速输入特殊符号的插件。
 
-[webviewDialog文档](https://hx.dcloud.net.cn/ExtensionDocs/Api/README?id=createwebviewdialog)
+## 插件说明
 
-## 如果使用本插件？
+* 对于一些特殊符号的输入平时都要通过输入法符号工具栏来选择输入，此插件会在编辑器窗口唤起一个窗口，通过窗口可以选择特殊符号完成输入
 
-项目管理器管理，选中任意uniapp或5+app项目，右键菜单点击【发布App到各大应用市场】
+## 使用方式
 
-## Api简介
+* 方式1：编辑窗口激活状态下，鼠标右键菜单选择：【特殊符号】来启动
+* 方式2：通过菜单栏【工具】->【特殊符号】->【插入特殊符号】来启动
+* 方式3：编辑状态按下ctrl+shift+alt+h快捷键快速使用插件
 
-webviewDialog， 基于WebView页面的对话框，通过html渲染对话框的主要内容，可通过参数定制对话框标题、按钮等内容。
+## 自定义快捷键
 
-按钮被添加到对话框下方的按钮组里，点击按钮会向WebView发送消息，开发者可在html通过js监听。
+HBuilderX 菜单【工具】【自定义快捷键】，可以自定义特殊符号助手唤起快捷键:
 
-## 截图
+```json
+{
+    "key": "",
+    "command": "symbols.symbols"
+}
+```
 
-![webviewDialog截图](/static/screenshot.png)
+## 友善提示
+
+* 如插件使用中有BUG，欢迎在评论区留言，我会抽时间跟进的
+* 因失业在家，抽时间写了此插件，所以安装开启了广告，望理解，谢谢了

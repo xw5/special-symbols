@@ -15,7 +15,7 @@ function showView(param) {
     let webviewDialog = hx.window.createWebViewDialog({
         modal: true,
         title: "特殊符号",
-        description: "点击特殊符号即可复制当前符号，粘贴到你要输入的地方即可",
+        description: "点击符号可以插入符号到当前光标同时会复制当前符号，你也可以去粘贴使用",
         dialogButtons: ['关闭'],
         size: { width: 960, height: 680 }
     }, {
